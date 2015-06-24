@@ -1,0 +1,26 @@
+<div style="{{bgColor}}">
+	<p>Hey amigo. You have {{daysLeft}} days left.</p>
+</div>
+
+{{#if isLastDay}}
+	<p>Giddy up!</p>
+{{/if}}
+
+{{#if daysLeft}}
+	<p><button {{action 'endTurn'}}>End turn</button></p>
+{{else}}
+	<p>Aww, you're out of time. <button {{action 'newGame'}}>Try again?</button></p>
+{{/if}}
+
+{{yield}}
+
+<hr>
+
+<h3>debug</h3>
+
+<ul>
+	<li>total days: {{totalDays}}</li>
+	<li>day: {{day}}</li>
+	<li>days left: {{daysLeft}}</li>
+	<li>percentage complete: {{percentageComplete}}%</li>
+</ul>
