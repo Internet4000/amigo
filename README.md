@@ -39,3 +39,8 @@ and
 ## Developing
 
 To develop this application, please see [ember-cli](http://www.ember-cli.com/).
+
+
+## Building and deploying
+
+To deploy the app, use `ember surge` --> amigo.surge.sh
