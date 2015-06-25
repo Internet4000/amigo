@@ -1,15 +1,19 @@
 <div style="{{bgColor}}">
-	<p>Hey amigo. You have {{daysLeft}} days left.</p>
+	<p>Hey {{lower-case name}}. You have {{daysLeft}} days left. What do you wanna do?</p>
 </div>
+
+<menu>
+{{#if daysLeft}}
+	<p>Nothing, really.</p>
+	<button {{action 'endTurn'}}>Sleep</button>
+{{else}}
+	<p>Aww, you're out of time.</p>
+	<button {{action 'newGame'}}>Try again?</button>
+{{/if}}
+</menu>
 
 {{#if isLastDay}}
 	<p>Giddy up!</p>
-{{/if}}
-
-{{#if daysLeft}}
-	<p><button {{action 'endTurn'}}>End turn</button></p>
-{{else}}
-	<p>Aww, you're out of time. <button {{action 'newGame'}}>Try again?</button></p>
 {{/if}}
 
 {{yield}}
@@ -23,4 +27,6 @@
 	<li>day: {{day}}</li>
 	<li>days left: {{daysLeft}}</li>
 	<li>percentage complete: {{percentageComplete}}%</li>
+	<li>actions made: {{session.actionsMade}}</li>
+	<li>days played: {{session.daysPlayed}}</li>
 </ul>

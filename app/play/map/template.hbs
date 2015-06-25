@@ -1,0 +1,14 @@
+<h2>Map</h2>
+
+<p>This is the map. But we could also use this as inventory or similar. Or upgrades. Settings.</p>
+
+<menu>
+	{{#each model.directions as |direction|}}
+		{{!-- <button {{action 'setDirection' direction}}>{{direction}}</button> --}}
+		{{#link-to 'play.map.direction' direction class="Button"}}
+			{{direction}}
+		{{/link-to}}
+	{{/each}}
+</menu>
+
+{{outlet}}

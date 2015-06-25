@@ -6,6 +6,12 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('play', function() {
+    this.route('map', function() {
+      this.route('direction', { path: ':direction' });
+    });
+    this.route('debug');
+  });
 });
 
 export default Router;

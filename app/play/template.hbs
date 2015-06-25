@@ -1,0 +1,7 @@
+<h1>Week of the {{input value=model.name class="Ninjaput"}}</h1>
+
+{{game-canvas name=model.name totalDays=model.totalDays newGame="reset"}}
+
+<p>{{#link-to 'play.map'}}Map{{/link-to}}</p>
+
+{{outlet}}

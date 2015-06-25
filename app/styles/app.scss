@@ -1,0 +1,36 @@
+html {
+	font-family: menlo;
+	font-size: 14px;
+}
+
+
+.Ninjaput {
+	border: 0;
+	padding: 0;
+	line-height: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	background-color: transparent;
+}
+
+.Button,
+button {
+	border: 1px solid hsl(0, 0%, 90%);
+	border-radius: 3px;
+	background-color: hsl(0, 0%, 98%);
+	background-image: linear-gradient(to bottom, hsl(0, 0%, 98%), hsl(0, 0%, 93%));
+	padding: 0.35em 0.6em;
+	font-size: 11px;
+	line-height: 14px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+}
+
+// menu {
+// 	display: flex;
+
+// 	> * {
+// 		flex: 1;
+// 	}
+// }

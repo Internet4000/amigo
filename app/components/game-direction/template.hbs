@@ -1,0 +1,11 @@
+<menu>
+	{{#each roads as |road|}}
+		<button {{action 'tryRoad' road}}>{{road}}</button>
+{{/each}}
+</menu>
+
+{{#if chosenRoad}}
+	<p>{{chosenRoad}} it is. What now?!</p>
+{{/if}}
+
+{{yield}}
