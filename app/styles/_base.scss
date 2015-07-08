@@ -1,0 +1,15 @@
+$green: #1ff042;
+$lightgreen: lighten($green, 30%);
+$black: #000;
+
+html {
+	font-family: AndaleMono, menlo, monospace;
+	font-size: 14px;
+	background-color: $black;
+	color: $green;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: $green;
+}

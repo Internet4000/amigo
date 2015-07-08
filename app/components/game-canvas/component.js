@@ -29,7 +29,7 @@ export default Ember.Component.extend({
 
 	bgColor: Ember.computed('percentageComplete', function() {
 		const percentage = this.get('percentageComplete') / 100;
-		return `background-color: rgba(0,0,0,${percentage})`;
+		return `background-color: rgba(255,255,255,${percentage})`;
 	}),
 
 	// onNewDay: Ember.observer('day', function() {
